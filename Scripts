@@ -1,0 +1,6 @@
+cd examples/lite/examples/object_detection/raspberry_pi
+bash download.sh /tmp
+
+python3 detect_picamera.py \
+  --model /tmp/detect.tflite \
+  --labels /tmp/coco_labels.txt
